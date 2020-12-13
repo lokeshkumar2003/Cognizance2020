@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="GUHAN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-23 12:07:30 PM"/>
+        <attribute name="created" value="R1VIQU47TEFQVE9QLTkxSDkzMkRFOzIwMjAtMTEtMTk7MDI6NDc6MzIgUE07MjYzMQ=="/>
+        <attribute name="edited" value="R1VIQU47TEFQVE9QLTkxSDkzMkRFOzIwMjAtMTEtMTk7MDM6MDI6NTAgUE07MTsyNzMx"/>
+        <attribute name="edited" value="UmFodWwtRGl3YWthcjtERVNLVE9QLUpENUQzTUs7MjAyMC0xMS0xOTswMzoyMDoyNiBQTTsxOzM2OTA="/>
+        <attribute name="edited" value="UmFuaml0aDtMQVBUT1AtVERMSERHMEo7MjAyMC0xMS0yMzsxMjowNzozMCBQTTsyOzMxNjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fact, num2, i, num1, sum, temp" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <output expression="&quot;Enter the number:&quot;" newline="True"/>
+            <input variable="num1"/>
+            <assign variable="temp" expression="num1"/>
+            <while expression="temp&gt;0">
+                <assign variable="fact" expression="1"/>
+                <assign variable="i" expression="1"/>
+                <assign variable="num2" expression="temp%10"/>
+                <while expression="i&lt;=num2">
+                    <assign variable="fact" expression="fact*i"/>
+                    <assign variable="i" expression="i+1"/>
+                </while>
+                <assign variable="sum" expression="sum+fact"/>
+                <assign variable="temp" expression="temp/10"/>
+            </while>
+            <if expression="num1==sum">
+                <then>
+                    <output expression="&quot;It is a strong number&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;It is not a strong number&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
