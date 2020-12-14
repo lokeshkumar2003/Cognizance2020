@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Roberto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-19 03:44:20 PM"/>
+        <attribute name="created" value="Um9iZXJ0bzsgUk9CRVJUTy1QQzsgMjAxNi0wMS0yMjsgMDk6MTE6MDEgOyAyNjc1"/>
+        <attribute name="edited" value="Um9iZXJ0bzsgUk9CRVJUTy1QQzsgMjAxNi0wMS0yMjsgMDk6NDA6MjIgOyAyNjgw"/>
+        <attribute name="edited" value="UmFuaml0aDtMQVBUT1AtVERMSERHMEo7MjAyMC0xMS0xOTswMzo0NDoyMCBQTTs0OzMxNzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, num2, num1, num3, sum, r" type="Integer" array="False" size=""/>
+            <output expression="&quot; enter any number&quot;" newline="True"/>
+            <input variable="num2"/>
+            <for variable="n" start="1" end="num2" direction="inc" step="1">
+                <assign variable="sum" expression="0"/>
+                <assign variable="num1" expression="n"/>
+                <assign variable="num3" expression="num1"/>
+                <while expression="num1 &gt; 0">
+                    <assign variable="r" expression="num1 MOD 10"/>
+                    <assign variable="sum" expression="sum + ( r * r * r)"/>
+                    <assign variable="num1" expression="num1 / 10"/>
+                </while>
+                <if expression="sum = num3">
+                    <then>
+                        <output expression="&quot;given number is a armstrong number&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
