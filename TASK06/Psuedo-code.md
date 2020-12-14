@@ -12,4 +12,6 @@
 ELSE
 * OUTPUT"NUMBER IS NOT AN ARMSTRONG NUMBER"
 END
+
+<!--->
 ![Flowchart](flowgo.png)
